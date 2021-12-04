@@ -17,7 +17,7 @@ const portfolio = () => {
       <div className="flex flex-col min-h-screen">
         <Header />
         <div className=" w-9/12 m-auto flex-1">
-          <div className="grid grid-cols-3 mt-10">
+          <div className="grid sm:grid-cols-3  mt-10">
             <Card
               image={"/img/tv.png"}
               link={"https://televizyononarim.com"}

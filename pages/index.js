@@ -15,21 +15,21 @@ export default function Home() {
         </style>
       </Head>
       <Header />
-      <div className="w-full h-20 my-20  ">
+      <div className="w-full h-20 sm:my-20 my-10">
         <div
           style={{ fontFamily: "Nunito" }}
           className="flex flex-col items-center justify-center  space-y-2"
         >
           <h1 className="text-3xl font-bold"> I'm a Front end Developer </h1>
           <div>
-            <h2 className="text-2xl">
+            <h2 className="sm:text-2xl text-xl ">
               I love to built web-application using <strong>React</strong>
             </h2>
           </div>
         </div>
       </div>
       <div className=" w-9/12 m-auto">
-        <div className="grid grid-cols-3 mt-10">
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-10">
           <Card
             image={"/img/devnoty.png"}
             link={"https://devnoty.com"}
