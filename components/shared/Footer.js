@@ -5,11 +5,8 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <div className="w-full h-20 border-t shadow flex  justify-center items-center ">
-        <div
-          style={{ fontFamily: "Electrolize" }}
-          className="cursor-pointer px-2 "
-        >
+      <div className=" font-electrolize w-full h-20 border-t shadow flex  justify-center items-center ">
+        <div className="cursor-pointer px-2 ">
           <Link href="/" passHref>
             <p className=" text-xl">Nurullah Bozkurt</p>
           </Link>

@@ -5,13 +5,12 @@ import { FaGithub } from "react-icons/fa";
 const Header = () => {
   return (
     <>
-      <div className="w-full h-20 flex justify-between items-center border-b shadow px-5">
-        <div
-          style={{ fontFamily: "Electrolize" }}
-          className="flex flex-col ml-5 bg-gray-800 text-white text-center sm:px-3 py-1 shadow rounded cursor-pointer "
-        >
+      <div className="w-full h-20 flex justify-between items-center border-b shadow-specialB px-5">
+        <div className="flex shadow-specialX flex-col ml-5 bg-gray-800 text-white text-center sm:px-3 py-1  rounded cursor-pointer ">
           <Link href="/" passHref>
-            <p className=" sm:text-xl text-md px-2">Nurullah Bozkurt</p>
+            <p className=" font-electrolize sm:text-xl text-md px-2">
+              Nurullah Bozkurt
+            </p>
           </Link>
         </div>
         <div className="flex mx-5">

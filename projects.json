@@ -1,0 +1,24 @@
+{
+    "clientProject" : [
+        {
+          "televizyononarim": {
+            "projectName": "televizyononarim",
+            "image": "/img/tv.png",
+            "link": "https://televizyononarim.com",
+            "paragraph":
+              "Seo compatible client project we made using Nextjs and Tailwind library."
+          }
+        },
+        {
+          "devnoty": {
+            "projectName": "devnoty",
+            "image": "/img/devnoty.png",
+            "link": "https://devnoty.com",
+            "paragraph": "The web and mobile software company we are affiliated with"
+          }
+        }
+      ]
+
+
+
+}
