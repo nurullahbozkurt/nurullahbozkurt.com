@@ -9,10 +9,6 @@ const portfolio = () => {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
-        <style>
-          @import
-          url('https://fonts.googleapis.com/css2?family=Electrolize&family=Nunito:wght@400;600;700&display=swap');
-        </style>
       </Head>
       <div className="flex flex-col min-h-screen">
         <Header />
