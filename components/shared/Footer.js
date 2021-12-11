@@ -5,28 +5,19 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <div className=" font-electrolize w-full h-20 border-t shadow flex  justify-center items-center ">
+      <div className=" font-electrolize w-full h-10 border-t shadow flex  justify-center items-center ">
         <div className="cursor-pointer px-2 ">
           <Link href="/" passHref>
-            <p className=" text-xl">Nurullah Bozkurt</p>
+            <p className="">Nurullah Bozkurt</p>
           </Link>
         </div>
         <a target="_blank" href="https://devnoty.com">
           <Image
-            width="40"
-            height="70"
+            width="30"
+            height="60"
             src="/../public/img/devnotyLogo.svg"
           ></Image>
         </a>
-
-        {/* <a
-          target="_blank"
-          href="https://github.com/nurullahbozkurt"
-          passHref
-          className="px-2"
-        >
-          <FaGithub />
-        </a> */}
       </div>
     </>
   );

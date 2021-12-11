@@ -7,6 +7,8 @@
     "watch": "npx tailwindcss -i tailwind.css -o ./styles/style.css --watch"
   },
   "dependencies": {
+    "@headlessui/react": "^1.4.2",
+    "@heroicons/react": "^1.0.5",
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

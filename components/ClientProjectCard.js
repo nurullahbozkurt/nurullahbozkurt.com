@@ -10,10 +10,10 @@ const ClientProjectCard = ({ projects }) => {
     <>
       <div
         onClick={detail}
-        className=" font-nunito shadow-specialX rounded-xl  bg-gray-100 flex flex-col m-5"
+        className="hover:bg-gray-200 cursor-pointer font-nunito shadow-specialX rounded-xl  bg-gray-100 flex flex-col m-5"
       >
         <div>
-          <div className=" p-4 border-b rounded-t-xl bg-black flex justify-center items-center ">
+          <div className=" p-3 border-b rounded-t-xl bg-black flex justify-center items-center ">
             <Image
               className="rounded shadow-2xl "
               width="300"

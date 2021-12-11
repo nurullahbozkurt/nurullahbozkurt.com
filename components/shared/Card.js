@@ -3,7 +3,7 @@ import Image from "next/image";
 const Card = ({ projects }) => {
   return (
     <>
-      <div className=" font-nunito rounded-xl shadow-specialX bg-gray-100 flex flex-col m-5">
+      <div className=" h-72 font-nunito rounded-xl shadow-specialX bg-gray-100 flex flex-col m-5">
         <div>
           <div className=" p-4 border-b rounded-t-xl bg-black flex justify-center items-center ">
             <Image
