@@ -12,11 +12,10 @@ const Footer = () => {
           </Link>
         </div>
         <a target="_blank" href="https://devnoty.com">
-          <Image
-            width="30"
-            height="60"
-            src="/../public/img/devnotyLogo.svg"
-          ></Image>
+          <img
+            className=" w-7 h-8"
+            src="https://d33wubrfki0l68.cloudfront.net/06745f2f70277023b0910a311bd9735572094fc5/49259/assets/images/logo.svg"
+          ></img>
         </a>
       </div>
     </>

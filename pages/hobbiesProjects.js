@@ -8,8 +8,8 @@ const client = () => {
   return (
     <div className=" min-h-full">
       <Header />
-      <div className="font-nunito sm:w-full h-20 sm:my-20 my-5">
-        <div className="flex flex-col items-center justify-center  space-y-2">
+      <div className="font-nunito sm:w-full h-20 sm:my-20 my-5 m-auto flex items-center justify-center">
+        <div className="text-center">
           <h1 className="text-2xl sm:text-3xl font-bold">My Hobies Projects</h1>
         </div>
       </div>
