@@ -22,7 +22,7 @@ const ClientProjectCard = ({ projects }) => {
             ></Image>
           </div>
         </div>
-        <div className="flex justify-center items-center py-1">
+        <div className="flex justify-center items-center py-2">
           <img
             className=" w-5 h-6"
             src="https://d33wubrfki0l68.cloudfront.net/06745f2f70277023b0910a311bd9735572094fc5/49259/assets/images/logo.svg"
