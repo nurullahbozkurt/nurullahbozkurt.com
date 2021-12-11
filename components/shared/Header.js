@@ -5,7 +5,7 @@ import MyDropdown from "../shared/Dropdown";
 const Header = () => {
   return (
     <>
-      <div className="w-full h-20 py-4 flex justify-between items-center border-b shadow-specialB px-5">
+      <div className="w-full h-20 py-4 flex justify-between items-center border-b shadow-specialB sm:px-5">
         <div className="flex shadow-specialX flex-col ml-5 bg-gray-800 text-white text-center sm:px-3 rounded cursor-pointer ">
           <Link href="/" passHref>
             <p className=" font-electrolize sm:text-xl text-md px-2">
