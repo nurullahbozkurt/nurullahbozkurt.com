@@ -42,7 +42,7 @@ const Detail = () => {
             <div className="py-3 font-semibold sm:text-lg">
               {projects && projects.description}
             </div>
-            <ul class="list-disc">
+            <ul className="list-disc">
               {projects &&
                 projects.features.map((item, index) => (
                   <li key={index}>{item}</li>
