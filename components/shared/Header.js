@@ -1,8 +1,15 @@
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import MyDropdown from "../shared/Dropdown";
+import useTranslation from "next-translate/useTranslation";
+import LanguageMenu from "./LanguageMenu";
 
 const Header = () => {
+  const { t, lang } = useTranslation("common");
+  const home = t("common:home");
+  const clientsProject = t("common:clientsProject");
+  const hobyProject = t("common:hobbyProjects");
+
   return (
     <>
       <div className="w-full h-20 py-4 flex justify-between items-center border-b shadow-specialB sm:px-5">
@@ -14,13 +21,14 @@ const Header = () => {
           </Link>
         </div>
         <div className="flex mx-5">
-          <div className="px-2 m-auto cursor-pointer">
-            <Link href="/">
-              <p className="text-gray-900  font-semibold ">Home</p>
-            </Link>
+          <div className="px-2 cursor-pointer">
+            <MyDropdown
+              clientTranslate={clientsProject}
+              hobyyTranslate={hobyProject}
+            />
           </div>
           <div className="px-2 cursor-pointer">
-            <MyDropdown />
+            <LanguageMenu />
           </div>
           <a
             target="_blank"

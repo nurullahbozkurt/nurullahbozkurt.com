@@ -4,26 +4,31 @@ import ClientProjectCard from "../components/ClientProjectCard";
 import HobiesProjectCard from "../components/HobiesProjectCard";
 import Footer from "../components/shared/Footer";
 import { useNurullah } from "../contexts/context";
+import useTranslation from "next-translate/useTranslation";
 
 export default function Home() {
   const { clientProjects, hobiesProjects } = useNurullah();
+  const { t, lang } = useTranslation("home");
+
+  const title = t("home:title");
+  const subTitle = t("home:subTitle");
+  const subTitleStrongTR = t("home:subTitleStrongTR");
+  const subTitleStrongEN = t("home:subTitleStrongEN");
 
   return (
     <div className=" min-h-full">
       <Head>
-        <title>Create Next App</title>
+        <title>Nurullah Bozkurt</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
       <div className="font-nunito sm:w-full h-20 sm:my-20 my-5">
-        <div className="flex flex-col items-center justify-center  space-y-2">
-          <h1 className="text-2xl sm:text-3xl font-bold">
-            {" "}
-            I'm a Front end Developer{" "}
-          </h1>
+        <div className="flex flex-col items-center justify-center px-1 space-y-2">
+          <h1 className="text-2xl sm:text-3xl font-bold">{title}</h1>
           <div>
-            <h2 className="text-lg sm:text-2xl  ">
-              I love to built web-application using <strong>React</strong>
+            <h2 className="text-lg sm:text-2xl text-center ">
+              <strong>{subTitleStrongTR}</strong> {subTitle}{" "}
+              <strong>{subTitleStrongEN}</strong>
             </h2>
           </div>
         </div>

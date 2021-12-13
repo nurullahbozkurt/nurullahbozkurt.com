@@ -2,15 +2,19 @@ import { useNurullah } from "../contexts/context";
 import HobiesProjectCard from "../components/HobiesProjectCard";
 import Header from "../components/shared/Header";
 import Footer from "../components/shared/Footer";
+import useTranslation from "next-translate/useTranslation";
+
 const client = () => {
   const { hobiesProjects } = useNurullah();
+  const { t, lang } = useTranslation("common");
+  const title = t("common:hobbyProjects");
 
   return (
     <div className=" min-h-full">
       <Header />
       <div className="font-nunito sm:w-full h-20 sm:my-20 my-5 m-auto flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl sm:text-3xl font-bold">My Hobies Projects</h1>
+          <h1 className="text-2xl sm:text-3xl font-bold">{title}</h1>
         </div>
       </div>
       <div className=" w-11/12 sm:w-9/12 m-auto">
