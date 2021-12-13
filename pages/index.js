@@ -22,8 +22,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <div className="font-nunito sm:w-full h-20 sm:my-20 my-5">
-        <div className="flex flex-col items-center justify-center px-1 space-y-2">
+      <div className="font-nunito sm:w-full h-20 sm:my-20 my-5 mb-10 sm:mb-0">
+        <div className="flex flex-col items-center justify-center text-center px-1 space-y-2">
           <h1 className="text-2xl sm:text-3xl font-bold">{title}</h1>
           <div>
             <h2 className="text-lg sm:text-2xl text-center ">
