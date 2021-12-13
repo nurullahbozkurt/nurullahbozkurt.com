@@ -20,7 +20,6 @@ const ContextProvider = ({ children }) => {
       statusTR: "Durum",
 
       features: [
-        ["JavaScript"],
         ["Next.JS Framework"],
         ["TailwindCss Library"],
         ["Seo Compatibility"],
