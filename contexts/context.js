@@ -119,28 +119,6 @@ const ContextProvider = ({ children }) => {
       ],
     },
     {
-      title: "directory",
-      image: "/img/directory.png",
-      link: "https://directory-tailwind.vercel.app/",
-      descriptionEN:
-        "Made using Yelp's Rest API. In this project, you can find the businesses in Istanbul and information about these businesses.",
-      descriptionTR:
-        "Yelp'in Rest API ını kullarak yaptığım proje'. Bu projede İstanbul'daki işletmeleri ve bu işletmelerle ilgili bilgilere ulaşabilirsiniz.",
-      statusTitleEN: "Development Continues.",
-      statusTitleTR: "Geliştirmeye devam ediyorum.",
-      status: false,
-      statusEN: "Status",
-      statusTR: "Durum",
-      gitHub: "https://github.com/nurullahbozkurt/directory-tailwind",
-      features: [
-        ["Next.JS Framework"],
-        ["Yelp Rest API Usage"],
-        ["TailwindCss Library"],
-        ["Response Design"],
-        ["Mobile Compatibility"],
-      ],
-    },
-    {
       title: "personal-project",
       image: "/img/personal.png",
       link: "https://personal-management.vercel.app/",
@@ -194,6 +172,28 @@ const ContextProvider = ({ children }) => {
       features: [
         ["React.JS Framework"],
         ["Weather Rest API Usage"],
+        ["TailwindCss Library"],
+        ["Response Design"],
+        ["Mobile Compatibility"],
+      ],
+    },
+    {
+      title: "directory",
+      image: "/img/directory.png",
+      link: "https://directory-tailwind.vercel.app/",
+      descriptionEN:
+        "Made using Yelp's Rest API. In this project, you can find the businesses in Istanbul and information about these businesses.",
+      descriptionTR:
+        "Yelp'in Rest API ını kullarak yaptığım proje'. Bu projede İstanbul'daki işletmeleri ve bu işletmelerle ilgili bilgilere ulaşabilirsiniz.",
+      statusTitleEN: "Development Continues.",
+      statusTitleTR: "Geliştirmeye devam ediyorum.",
+      status: false,
+      statusEN: "Status",
+      statusTR: "Durum",
+      gitHub: "https://github.com/nurullahbozkurt/directory-tailwind",
+      features: [
+        ["Next.JS Framework"],
+        ["Yelp Rest API Usage"],
         ["TailwindCss Library"],
         ["Response Design"],
         ["Mobile Compatibility"],

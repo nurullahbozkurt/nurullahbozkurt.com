@@ -1,6 +1,9 @@
 import Image from "next/image";
+import useTranslation from "next-translate/useTranslation";
 
 const Card = ({ projects }) => {
+  const { t, lang } = useTranslation("common");
+  const visited = t("common:visited");
   return (
     <>
       <div className="font-nunito rounded-xl shadow-specialX bg-gray-100 flex flex-col m-5">
@@ -16,7 +19,7 @@ const Card = ({ projects }) => {
         </div>
         <div className="p-3 font-bold text-lg text-center">
           <a target="_blank" className=" text-red-800" href={projects.link}>
-            Visited
+            {visited}
           </a>
         </div>
       </div>
