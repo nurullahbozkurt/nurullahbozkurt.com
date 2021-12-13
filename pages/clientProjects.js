@@ -12,9 +12,11 @@ const client = () => {
   return (
     <div className=" min-h-full">
       <Header />
-      <div className="font-nunito sm:w-full h-20 sm:my-15 my-5">
-        <div className="flex flex-col items-center justify-center  space-y-2">
-          <h1 className="text-2xl sm:text-3xl font-bold">{title}</h1>
+      <div className="font-nunito sm:w-full h-20 sm:my-15 my-5 flex justify-center items-center">
+        <div className="m-auto text-center space-y-2">
+          <h1 className="flex justify-center items-center text-2xl sm:text-3xl text-center font-bold">
+            {title}
+          </h1>
         </div>
       </div>
       <div className=" w-11/12 sm:w-9/12 m-auto">

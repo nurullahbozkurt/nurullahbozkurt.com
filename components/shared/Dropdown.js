@@ -5,7 +5,7 @@ import { ChevronDownIcon } from "@heroicons/react/solid";
 export default function MyDropDown({ clientTranslate, hobyyTranslate }) {
   return (
     <div className=" text-right">
-      <Menu as="div" className="relative inline-block text-left">
+      <Menu as="div" className="relative inline-block text-left z-10">
         <div>
           <Menu.Button className="inline-flex space-x-2 justify-center w-full px-5 py-2 bg-white text-sm font-medium text-gray-900 shadow rounded-full hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 shadow-specialB">
             Portfolio
