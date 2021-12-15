@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { IoIosArrowForward } from "react-icons/io";
 import useTranslation from "next-translate/useTranslation";
 
 const Card = ({ projects }) => {
@@ -17,9 +18,16 @@ const Card = ({ projects }) => {
             ></Image>
           </div>
         </div>
-        <div className="p-3 font-bold text-lg text-center">
-          <a target="_blank" className=" text-red-800" href={projects.link}>
+        <div className="p-3 font-bold text-lg text-center ">
+          <a
+            target="_blank"
+            className="flex items-center justify-center text-blue-900"
+            href={projects.link}
+          >
             {visited}
+            <div className="font-bold text-3xl">
+              <IoIosArrowForward />
+            </div>
           </a>
         </div>
       </div>

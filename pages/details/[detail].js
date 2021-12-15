@@ -37,7 +37,9 @@ const Detail = () => {
       <Header />
       <div>
         <div className="font-nunito lg:container lg:mx-auto  md:grid grid-cols-2 lg:grid-cols-3">
-          <Card className="col-span-1" projects={projects} />
+          <div className="flex items-center justify-center ">
+            <Card className="col-span-1" projects={projects} />
+          </div>
 
           <div className="col-span-1 lg:col-span-2 p-10 sm:px-5 sm:py-0">
             <div className=" flex items-center justify-center font-bold text-2xl ">
