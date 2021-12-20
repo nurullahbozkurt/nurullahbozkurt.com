@@ -1,4 +1,5 @@
 import Header from "../../components/shared/Header";
+import HeaderMobile from "../../components/shared/HeaderMobile";
 import Footer from "../../components/shared/Footer";
 import { useNurullah } from "../../contexts/context";
 import { useRouter } from "next/router";
@@ -34,7 +35,12 @@ const Detail = () => {
 
   return (
     <div className="h-screen flex flex-col justify-between ">
-      <Header />
+      <div className="hidden sm:block">
+        <Header />
+      </div>
+      <div className="block sm:hidden">
+        <HeaderMobile />
+      </div>
       <div>
         <div className="font-nunito lg:container lg:mx-auto  md:grid grid-cols-2 lg:grid-cols-3">
           <div className="flex items-center justify-center ">

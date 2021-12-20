@@ -1,6 +1,8 @@
 import { useNurullah } from "../contexts/context";
 import ClientProjectCard from "../components/ClientProjectCard";
 import Header from "../components/shared/Header";
+import HeaderMobile from "../components/shared/HeaderMobile";
+
 import Footer from "../components/shared/Footer";
 import useTranslation from "next-translate/useTranslation";
 
@@ -11,7 +13,12 @@ const client = () => {
 
   return (
     <div className=" min-h-full">
-      <Header />
+      <div className="hidden sm:block">
+        <Header />
+      </div>
+      <div className="block sm:hidden">
+        <HeaderMobile />
+      </div>
       <div className="font-nunito sm:w-full h-20 sm:my-15 my-5 flex justify-center items-center">
         <div className="m-auto text-center space-y-2">
           <h1 className="flex justify-center items-center text-2xl sm:text-3xl text-center font-bold">
