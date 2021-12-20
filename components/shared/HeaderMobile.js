@@ -52,7 +52,7 @@ const HeaderMobile = () => {
               onClick={openClose}
               className="text-2xl w-10 h-10 flex items-center justify-center rounded-full shadow-specialB border mx-5 "
             >
-              {toggle ? <MdOutlineClose /> : <MdLegendToggle />}
+              {toggle ? <MdLegendToggle /> : <MdOutlineClose />}
             </div>
           </div>
         </div>
@@ -62,7 +62,7 @@ const HeaderMobile = () => {
           } w-full h-full top-0 left-0 bottom-0 bg-white z-10`}
         >
           <div className="container mx-auto">
-            <div className="w-full flex flex-col items-center justify-center space-y-10 mt-24 text-xl">
+            <div className="w-full flex flex-col items-center justify-center space-y-10 mt-40 text-xl">
               <Link href="/clientProjects">{clientsProject}</Link>
               <Link href="/hobbiesProjects">{hobyProject}</Link>
               <div className="flex items-center justify-center border p-1 rounded-full shadow-specialB">
