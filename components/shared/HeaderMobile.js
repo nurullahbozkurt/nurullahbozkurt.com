@@ -40,8 +40,8 @@ const HeaderMobile = () => {
   };
   return (
     <>
-      <div className="container  mx-auto shadow-specialB h-14 flex items-center justify-between">
-        <div className=" w-full flex items-center justify-between z-20">
+      <div className="container  mx-auto h-14 flex items-center justify-between">
+        <div className=" w-full h-full flex items-center justify-between z-20 shadow-specialB ">
           <Link href="/">
             <p className="font-electrolize bg-gray-800 text-white px-3 py-2 rounded-r shadow-specialY">
               Nurullah Bozkurt
