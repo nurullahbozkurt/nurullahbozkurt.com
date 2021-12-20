@@ -5,6 +5,7 @@ import HobiesProjectCard from "../components/HobiesProjectCard";
 import Footer from "../components/shared/Footer";
 import { useNurullah } from "../contexts/context";
 import useTranslation from "next-translate/useTranslation";
+import HeaderMobile from "../components/shared/HeaderMobile";
 
 export default function Home() {
   const { clientProjects, hobiesProjects } = useNurullah();
@@ -21,7 +22,13 @@ export default function Home() {
         <title>Nurullah Bozkurt</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+      <div className="hidden sm:block">
+        <Header />
+      </div>
+      <div className="block sm:hidden">
+        <HeaderMobile />
+      </div>
+
       <div className="font-nunito sm:w-full h-20 sm:my-20 my-10 ">
         <div className="flex flex-col items-center justify-center text-center px-1 space-y-2">
           <h1 className="text-2xl sm:text-3xl font-bold">{title}</h1>

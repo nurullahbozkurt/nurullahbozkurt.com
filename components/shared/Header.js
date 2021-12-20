@@ -15,7 +15,7 @@ const Header = () => {
       <div className="w-full h-20 py-4 flex justify-between items-center border-b shadow-specialB sm:px-5">
         <div className="flex shadow-specialX flex-col sm:ml-5 bg-gray-800 text-white text-center sm:px-3 rounded-r sm:rounded cursor-pointer ">
           <Link href="/">
-            <p className=" font-electrolize sm:text-xl text-md px-3 sm:px-2 ">
+            <p className="  sm:text-xl text-md px-3 sm:px-2 ">
               Nurullah Bozkurt
             </p>
           </Link>
@@ -39,6 +39,12 @@ const Header = () => {
           </a>
         </div>
       </div>
+
+      {/* <div id="mobile-header" className="hidden sm:block w-full h-screen" >
+        <div>
+          
+        </div>
+      </div> */}
     </>
   );
 };
