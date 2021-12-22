@@ -1,7 +1,7 @@
 module.exports = {
   mode: "jit",
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     boxShadow: {
       specialB:
@@ -19,7 +19,15 @@ module.exports = {
       nunito: ["Nunito"],
       electrolize: ["Electrolize"],
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        bg: "url('/img/bg3.jpg')",
+      },
+      colors: {
+        darkTailwindBody: "#111a2d",
+        darkTailwindHeader: "#0e1729",
+      },
+    },
   },
 
   variants: {

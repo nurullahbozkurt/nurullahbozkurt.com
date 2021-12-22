@@ -2,13 +2,18 @@ import Link from "next/link";
 import { MdLegendToggle } from "react-icons/md";
 import { MdOutlineClose } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
+import { MdDarkMode } from "react-icons/md";
+import { MdOutlineDarkMode } from "react-icons/md";
 import useTranslation from "next-translate/useTranslation";
 import { useState } from "react";
-import { Switch } from "@headlessui/react";
 import i18nConfig from "/i18n.json";
 import { useRouter } from "next/router";
+import MultiLangToggle from "../shared/MultiLangToggle";
+import { useNurullah } from "../../contexts/context";
 
 const HeaderMobile = () => {
+  const { darkMode, toggle, openClose, dark } = useNurullah();
+
   const { t, lang } = useTranslation("common");
   const router = useRouter();
   const id = router.asPath;
@@ -17,7 +22,6 @@ const HeaderMobile = () => {
   const clientsProject = t("common:clientsProject");
   const hobyProject = t("common:hobbyProjects");
   const [enabled, setEnabled] = useState(false);
-  const [toggle, setToggle] = useState(true);
 
   const variants = {
     visible: { opacity: 1 },
@@ -35,60 +39,50 @@ const HeaderMobile = () => {
       router.push(`/${id}`, null, { locale: defaultLocale });
   };
 
-  const openClose = () => {
-    setToggle(!toggle);
-  };
   return (
     <>
-      <div className="container  mx-auto h-14 flex items-center justify-between">
-        <div className=" w-full h-full flex items-center justify-between z-20 shadow-specialB ">
+      <div className="container dark:text-white mx-auto h-14 flex items-center justify-between ">
+        <div className=" w-full h-full flex items-center justify-between z-20 shadow-specialB dark:bg-transparent dark:border-b ">
           <Link href="/">
-            <p className="font-electrolize bg-gray-800 text-white px-3 py-2 rounded-r shadow-specialY">
+            <p className="font-electrolize bg-gray-800 dark:bg-white text-white dark:text-gray-800 px-3 py-2 rounded-r shadow-specialY">
               Nurullah Bozkurt
             </p>
           </Link>
-          <div>
+
+          <div className="flex items-center justify-center">
+            <div
+              onClick={darkMode}
+              className="flex sm:hidden items-center justify-center text-2xl w-10 h-10 rounded-full border "
+            >
+              {dark ? <MdOutlineDarkMode /> : <MdDarkMode />}
+            </div>
             <div
               onClick={openClose}
-              className="text-2xl w-10 h-10 flex items-center justify-center rounded-full shadow-specialB border mx-5 "
+              className="text-2xl w-10 h-10 flex items-center justify-center rounded-full shadow-specialB border mx-5  "
             >
               {toggle ? <MdLegendToggle /> : <MdOutlineClose />}
             </div>
           </div>
         </div>
         <div
-          className={`absolute ${
+          className={`dark:bg-bg dark:bg-contain  absolute ${
             toggle ? "hidden" : "block"
-          } w-full h-full top-0 left-0 bottom-0 bg-white z-10`}
+          } w-full h-full top-0 left-0 bottom-0  bg-white  z-10`}
         >
           <div className="container mx-auto">
             <div className="w-full flex flex-col items-center justify-center space-y-10 mt-40 text-xl">
               <Link href="/clientProjects">{clientsProject}</Link>
               <Link href="/hobbiesProjects">{hobyProject}</Link>
-              <div className="flex items-center justify-center border p-1 rounded-full shadow-specialB">
-                <p className="py-1 px-2 text-base ">{!enabled ? "TR" : "EN"}</p>
-                <Switch
-                  checked={enabled}
-                  onChange={newEnable}
-                  className={`${
-                    enabled ? "bg-gray-800" : "bg-gray-800"
-                  } relative inline-flex items-center h-8 rounded-full w-14`}
+              <div className="flex items-center justify-center pt-10">
+                <MultiLangToggle onChange={newEnable} enabled={enabled} />
+                <a
+                  target="_blank"
+                  href="https://github.com/nurullahbozkurt"
+                  className="px-2 text-center flex items-center justify-center m-auto text-2xl"
                 >
-                  <span className="sr-only">Enable notifications</span>
-                  <span
-                    className={`${
-                      enabled ? "translate-x-7" : "translate-x-3"
-                    } inline-block w-4 h-4 transform bg-white rounded-full`}
-                  />
-                </Switch>
+                  <FaGithub />
+                </a>
               </div>
-              <a
-                target="_blank"
-                href="https://github.com/nurullahbozkurt"
-                className="px-2 text-center flex items-center justify-center m-auto text-2xl"
-              >
-                <FaGithub />
-              </a>
             </div>
           </div>
         </div>

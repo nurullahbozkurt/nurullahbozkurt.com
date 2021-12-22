@@ -1,9 +1,18 @@
 import { createContext, useContext } from "react";
-
+import { useState } from "react";
 const NurullahContext = createContext();
 const useNurullah = () => useContext(NurullahContext);
 
 const ContextProvider = ({ children }) => {
+  const [dark, setDark] = useState(false);
+  const [toggle, setToggle] = useState(true);
+
+  const darkMode = () => {
+    setDark(!dark);
+  };
+  const openClose = () => {
+    setToggle(!toggle);
+  };
   const clientProjects = [
     {
       title: "meddo.fr",
@@ -201,7 +210,16 @@ const ContextProvider = ({ children }) => {
   ];
 
   return (
-    <NurullahContext.Provider value={{ clientProjects, hobiesProjects }}>
+    <NurullahContext.Provider
+      value={{
+        clientProjects,
+        hobiesProjects,
+        dark,
+        darkMode,
+        openClose,
+        toggle,
+      }}
+    >
       {children}
     </NurullahContext.Provider>
   );

@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from "next/document";
-
 export default function Document() {
   return (
     <Html>
@@ -12,7 +11,8 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
-      <body>
+      <body className="dark:relative dark:text-white dark:bg-darkTailwindBody dark:bg-bg dark:bg-contain  ">
+        <div className="dark:absolute top-0 bottom-0 left-0 right-0 bg-gray-800 bg-opacity-50 z-[-1]"></div>
         <Main />
         <NextScript />
       </body>
