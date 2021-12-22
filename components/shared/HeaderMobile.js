@@ -12,7 +12,7 @@ import MultiLangToggle from "../shared/MultiLangToggle";
 import { useNurullah } from "../../contexts/context";
 
 const HeaderMobile = () => {
-  const { darkMode, toggle, openClose, dark } = useNurullah();
+  const { darkMode, toggle, openClose, dark, setToggle } = useNurullah();
 
   const { t, lang } = useTranslation("common");
   const router = useRouter();
@@ -39,12 +39,21 @@ const HeaderMobile = () => {
       router.push(`/${id}`, null, { locale: defaultLocale });
   };
 
+  const closeToggle = () => {
+    setToggle(!toggle);
+    console.log(toggle);
+    console.log("clicklendi");
+  };
+
   return (
     <>
       <div className="container dark:text-white mx-auto h-14 flex items-center justify-between ">
         <div className=" w-full h-full flex items-center justify-between z-20 shadow-specialB dark:bg-transparent dark:border-b ">
           <Link href="/">
-            <p className="font-electrolize bg-gray-800 dark:bg-white text-white dark:text-gray-800 px-3 py-2 rounded-r shadow-specialY">
+            <p
+              onClick={closeToggle}
+              className="font-electrolize bg-gray-800 dark:bg-white text-white dark:text-gray-800 px-3 py-2 rounded-r shadow-specialY"
+            >
               Nurullah Bozkurt
             </p>
           </Link>
@@ -71,8 +80,12 @@ const HeaderMobile = () => {
         >
           <div className="container mx-auto">
             <div className="w-full flex flex-col items-center justify-center space-y-10 mt-40 text-xl">
-              <Link href="/clientProjects">{clientsProject}</Link>
-              <Link href="/hobbiesProjects">{hobyProject}</Link>
+              <Link href="/clientProjects">
+                <p onClick={closeToggle}>{clientsProject}</p>
+              </Link>
+              <Link href="/hobbiesProjects">
+                <p onClick={closeToggle}>{hobyProject}</p>
+              </Link>
               <div className="flex items-center justify-center pt-10">
                 <MultiLangToggle onChange={newEnable} enabled={enabled} />
                 <a

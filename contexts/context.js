@@ -218,6 +218,7 @@ const ContextProvider = ({ children }) => {
         darkMode,
         openClose,
         toggle,
+        setToggle,
       }}
     >
       {children}
