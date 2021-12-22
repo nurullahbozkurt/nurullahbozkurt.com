@@ -51,7 +51,7 @@ const HeaderMobile = () => {
         <div className=" w-full h-full flex items-center justify-between z-20 shadow-specialB dark:bg-transparent dark:border-b ">
           <Link href="/">
             <p
-              onClick={closeToggle}
+              onClick={() => setToggle(true)}
               className="font-electrolize bg-gray-800 dark:bg-white text-white dark:text-gray-800 px-3 py-2 rounded-r shadow-specialY"
             >
               Nurullah Bozkurt
