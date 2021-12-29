@@ -61,7 +61,7 @@ const HeaderMobile = () => {
           <div className="flex items-center justify-center">
             <div
               onClick={darkMode}
-              className="flex sm:hidden items-center justify-center text-2xl w-10 h-10 rounded-full border "
+              className="flex items-center justify-center text-2xl w-10 h-10 rounded-full border"
             >
               {dark ? <MdOutlineDarkMode /> : <MdDarkMode />}
             </div>
@@ -74,7 +74,7 @@ const HeaderMobile = () => {
           </div>
         </div>
         <div
-          className={`dark:bg-bg dark:bg-contain  absolute ${
+          className={`dark:bg-bgGr dark:bg-contain  absolute ${
             toggle ? "hidden" : "block"
           } w-full h-full top-0 left-0 bottom-0  bg-white  z-10`}
         >

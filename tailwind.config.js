@@ -22,6 +22,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         bg: "url('/img/bg3.jpg')",
+        bgGr: "linear-gradient(to right bottom, #2c121f, #2a1725, #271b2a, #241f2c, #23232e, #21252f, #202730, #202930, #1f2a30, #1e2b2f, #1f2c2d, #202d2c);",
       },
       colors: {
         darkTailwindBody: "#111a2d",

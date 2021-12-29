@@ -137,6 +137,8 @@ const ContextProvider = ({ children }) => {
       statusTitleEN: "Development Continues.",
       statusTitleTR: "Geliştirmeye devam ediyorum.",
       status: false,
+      statusEN: "Status",
+      statusTR: "Durum",
       gitHub: "https://github.com/nurullahbozkurt/personal-management",
       features: [
         ["JavaScript"],
@@ -156,6 +158,8 @@ const ContextProvider = ({ children }) => {
       statusTitleEN: "Development Continues.",
       statusTitleTR: "Geliştirmeye devam ediyorum.",
       status: false,
+      statusEN: "Status",
+      statusTR: "Durum",
       gitHub: "https://github.com/nurullahbozkurt/movie-website",
       features: [
         ["React.JS Framework"],
@@ -173,9 +177,11 @@ const ContextProvider = ({ children }) => {
         "Location based weather app made with React. You can find out the weather conditions of the city you are looking for and the weather conditions of your location.",
       descriptionTR:
         "React ile yapmış olduğum konum bazlı hava durumu uygulaması. Bulunduğunuz konumun ve öğrenmek istediğiniz şehrin hava şartlarını görebilirsiniz. ",
-      statusTitleTitleEN: "Development Continues.",
-      statusTitleTitleTR: "Geliştirmeye devam ediyorum.",
+      statusTitleEN: "Development Continues.",
+      statusTitleTR: "Geliştirmeye devam ediyorum.",
       status: false,
+      statusEN: "Status",
+      statusTR: "Durum",
       gitHub: "https://github.com/nurullahbozkurt/weather-app",
       features: [
         ["React.JS Framework"],

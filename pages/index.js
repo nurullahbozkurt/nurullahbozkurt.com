@@ -41,7 +41,7 @@ export default function Home() {
         </div>
       </div>
       <div className=" w-11/12 sm:w-9/12 m-auto">
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
           {clientProjects.map((item, index) => (
             <ClientProjectCard key={index} projects={item} />
           ))}

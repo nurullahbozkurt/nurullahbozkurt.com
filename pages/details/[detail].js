@@ -80,8 +80,8 @@ const Detail = () => {
             )}
 
             <p className={`py-3 ${statusColor} font-bold`}>
-              <span className="text-black pr-1">
-                {lang === "tr" ? projects.statusTR : projects.statusEN}
+              <span className="text-black dark:text-yellow-600 pr-1">
+                {lang === "tr" ? projects.statusTR : projects.statusEN}:
               </span>
               {lang === "tr" ? projects.statusTitleTR : projects.statusTitleEN}
             </p>
